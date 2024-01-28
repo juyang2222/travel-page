@@ -3,12 +3,18 @@ body {
   margin: 0px;
 }
 
-#page-logo {
+#logo {
   padding: 10px;
   font-family: "Oleo Script", sans-serif;
-  color: rgb(149, 96, 179);
+  color: rgb(0, 0, 0);
   font-size: 50px;
   text-decoration: none;
   text-transform: uppercase;
   text-shadow: 1px 1px 2px rgb(0, 0, 0);
+}
+
+a:-webkit-any-link {
+  color: rgb(186, 135, 160);
+  cursor: pointer;
+  text-decoration: none;
 }
