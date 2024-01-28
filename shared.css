@@ -21,6 +21,13 @@ a:-webkit-any-link {
   cursor: pointer;
   text-decoration: none;
 }
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
 
 ul {
   list-style: none;
@@ -28,13 +35,6 @@ ul {
   padding: 0;
   display: inline;
   color: rgb(193, 95, 143);
-}
-
-header {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between; 
-  align-items: center;
 }
 
 header ul {
@@ -46,12 +46,3 @@ header ul {
   font-weight: bold;
 }
 
-#button{
-  color: rgb(0, 0, 0);
-  cursor: pointer;
-  text-decoration: none;
-  background-color: rgb(253, 220, 236);
-  padding: 3px 5px;
-  border-radius: 10px;
-
-}
