@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Oleo+Script:wght@700&family=Quicksand:wght@300;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Travel Goal</title>
+    <!-- Add the Vue.js library -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+  </head>
+  <body>
+    <div id="app">
+      <header>
+        <div id="logo"><router-link to="/">Travel Goals</router-link></div>
+
+        <nav>
+          <ul>
+            <li><router-link to="/places" class="nav">Destination</router-link></li>
+            <li><router-link to="/about" class="nav">About</router-link></li>
+          </ul>
+        </nav>
+      </header>
+
+      <main>
+        <router-view></router-view>
+      </main>
+
+      <footer></footer>
+    </div>
+
+    <script>
+      const Home = {
+        template: `
+          <section id="hero">
+            <div id="hero-content">
+              <h1>Juyeong's Travel Page</h1>
+              <p>Let's explore the world together!</p>
+              <router-link to="/places">Discover places</router-link>
+            </div>
+          </section>
+          <section id="highlights"></section>
+        `,
+      };
+
+      const router = new VueRouter({
+        routes: [
+          { path: '/', component: Home },
+          { path: '/places', component: /* Add your component for places */ },
+          { path: '/about', component: /* Add your component for about */ },
+        ],
+      });
+
+      new Vue({
+        el: '#app',
+        router,
+      });
+    </script>
+  </body>
+</html>
