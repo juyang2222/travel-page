@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Oleo+Script:wght@700&family=Quicksand:wght@300;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Travel Goal</title>
+    <style>
+      #hero {
+        height: 800px;
+        background-image: url("/images/places/ocean.jpg");
+        background-position: center;
+        background-size: cover;
+        top: 0px;
+      }
+
+      body {
+        position: relative;
+      }
+
+      #hero-content {
+        width: 900px;
+        background-color: rgba(51, 47, 47, 0.8);
+        box-shadow: 2px 4px 8px rgb(68, 67, 67);
+        border-radius: 8px;
+        text-align: center;
+        padding: 50px 0px;
+        margin: 0 auto;
+        position: relative;
+        top: 200px;
+      }
+
+      #hero-content h1 {
+        color: aliceblue;
+        text-transform: uppercase;
+        font-size: 50px;
+        font-family: "Raleway", sans-serif;
+        margin: 0;
+      }
+
+      #hero-content p {
+        color: aliceblue;
+        text-transform: uppercase;
+        font-size: 24px;
+        font-weight: 300;
+      }
+
+      #hero-content a {
+        color: rgb(0, 0, 0);
+        cursor: pointer;
+        text-decoration: none;
+        background-color: rgb(255, 238, 246);
+        padding: 4.5px 5px;
+        border-radius: 3px;
+        box-shadow: 2px 4px 8px rgba(68, 67, 67, 0.8);
+      }
+
+      #hero-content a:hover {
+        background-color: rgb(232, 200, 231);
+      }
+
+      body {
+        font-family: "Quicksand", sans-serif;
+        margin: 0px;
+        position: absolute;
+        width: 100%;
+      }
+
+      #logo {
+        padding: 10px;
+        font-family: "Oleo Script", sans-serif;
+        font-size: 50px;
+        text-decoration: none;
+        text-transform: uppercase;
+        text-shadow: 1px 1px 2px rgb(0, 0, 0);
+        margin-left: 25px;
+        margin-top: 3px;
+      }
+
+      :any-link {
+        color: rgb(198, 143, 169);
+        cursor: pointer;
+        text-decoration: none;
+        text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.2);
+      }
+
+      header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        position: absolute;
+        width: 100%;
+        box-sizing: border-box;
+      }
+
+      .nav {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: inline;
+        color: rgb(0, 0, 0);
+      }
+
+      .nav:hover {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: inline;
+        color: aliceblue;
+        background-color: rgb(236, 185, 209);
+        padding: 0px 2px;
+        border-radius: 2.3px;
+      }
+
+      header ul {
+        list-style-type: none;
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        padding-right: 40px;
+        font-family: sans-serif;
+        font-weight: bold;
+      }
+
+      header a:hover {
+        color: rgb(215, 150, 150);
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div id="logo"><a href="/index.html">Travel Goals</a></div>
+
+      <nav>
+        <ul>
+          <li>
+            <a class="nav" href="places.html" target="_blank">Destination</a>
+          </li>
+
+          <li><a class="nav" href="about.html">About</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="hero">
+        <div id="hero-content">
+          <h1>Juyeong's Travel Page</h1>
+          <p>Let's explore the world together!</p>
+          <a href="places.html">Discover places</a>
+        </div>
+      </section>
+      <section id="highlights"></section>
+    </main>
+    <footer></footer>
+  </body>
+</html>
