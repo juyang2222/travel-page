@@ -15,8 +15,8 @@ header {
 }
 
 main li img {
-  width: 500px;
-  height: 400px;
+  width: 50%;
+  height: 35%;
   /* border-radius: 6px; */
   object-fit: cover;
 }
@@ -29,7 +29,7 @@ main ul {
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(5, 1fr);
   justify-content: center !important;
-  gap: 20px;
+  gap: 0
   margin: 10px 15px;
 }
 
@@ -56,6 +56,10 @@ main li {
   border-radius: 6px;
   overflow: hidden;
   margin: 10px auto;
+  height: 40%;
+  width: 90%; /* 블록의 가로 크기를 100%로 설정하여 부모 그리드 컨테이너의 크기에 따라 조정 */
+  padding: 20px;
+  box-sizing: content-box; /* 패딩을 포함한 크기를 설정 */
 }
 
 .item-content {
@@ -63,7 +67,15 @@ main li {
   display: flex;
   flex-direction: column;
   /* justify-content: space-between; */
-  
+  width: 80%;
+}
+
+ul h2 {
+  position: relative;
+  top: 0px;
+  left: 0px;
+  padding: 0;
+  margin: 0;
 }
 
 .item-content p {
@@ -73,6 +85,11 @@ main li {
 
 .actions {
   text-align: right;
+  height: 50px;
+  position: relative;
+  bottom: 0px;
+  
+  box-sizing: content-box;
 }
 
 .actions a {
@@ -91,11 +108,7 @@ main li {
 ul li:nth-of-type(3) {
   grid-column: 1/3;
   grid-row: 2/3;
-  width: 100%;
-  margin-left: 10px;
-  margin-right: 10px;
-  position: relative;
-  right: 7.5px;
+  width: 95%;
 }
 
 /* #specific{
@@ -107,29 +120,29 @@ ul li:nth-of-type(3) {
 ul li:nth-of-type(10) {
   grid-column: 1/3;
   grid-row: 6/7;
-  width: 100%;
-  margin-left: 10px;
-  margin-right: 10px;
+  width: 95%;
+
+
+}
+
+.spe {
   position: relative;
-  right: 7.5px;
+  bottom: -50px;
 }
 
-.spe{
-  position: absolute;
-  bottom: 100px;
-  right: 30px;
+.spe img {
+  height: 100%;
 }
 
-footer{
+footer {
   position: relative;
-  top:20px
+  top: 20px;
 }
 
-footer a{
+footer a {
   background-color: black;
 }
 
-
-footer a:hover{
+footer a:hover {
   background-color: black !important;
 }
